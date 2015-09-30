@@ -15,7 +15,7 @@ public class Triangle extends GeometricObject {
 	}
 	
 	//constructor that creates a triangle with specified sides
-	public Triangle(double side1, double side2, double side3){
+	public Triangle(String color, boolean filled, double side1, double side2, double side3){
 		this.side1 = side1;
 		this.side2 = side2;
 		this.side3 = side3;
@@ -47,6 +47,7 @@ public class Triangle extends GeometricObject {
 	
 	// toString method
 	public String toString(){
-		return ("The area is" + getArea() + "the perimeter is" + getPerimeter());
+		return ("The area is" + getArea() + "the perimeter is" + getPerimeter() + "the color is" + getColor() +
+			      "filled:" + isFilled());
 	}
 }
